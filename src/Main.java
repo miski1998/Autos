@@ -1,4 +1,4 @@
-package features;
+import features.*;
 
 import java.util.Scanner;
 
