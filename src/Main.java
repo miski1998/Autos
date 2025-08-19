@@ -21,6 +21,14 @@ public class Main {
             int opcion = scanner.nextInt();
             scanner.nextLine(); // limpiar buffer
 
+            systema.addCar(new Car("poi-123", "toyota", "verde", 56));
+            systema.addCar(new Car("lkj-123", "nisan", "negro", 66));
+            systema.addCar(new Car("mnb-123", "audi", "blanco", 96));
+
+            systema.addCliente(new Cliente("Arturo","123456789","masculino",23));
+            systema.addCliente(new Cliente("Jesus","321654987","masculino",32));
+            systema.addCliente(new Cliente("Andre","987654321","masculino",78));
+
             switch (opcion) {
                 case 1:
                     String  placa, modelo,color;
