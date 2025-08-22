@@ -1,0 +1,16 @@
+services:
+  db:
+    container_name: postgres-container
+    image: postgres:16-alpine
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: devarturo
+      POSTGRES_PASSWORD: password
+    volumes:
+      - db_prueba:/var/lib/postgresql/data
+
+volumes:
+  db_prueba:
